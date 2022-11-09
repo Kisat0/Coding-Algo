@@ -16,8 +16,7 @@ Début
                         affecter " tableau[i] " la valeur de " tableau [i+1] " 
                         affecter " tableau[i+1] " la valeur de " temp " 
                         affecter a "tri" la valeur " false "
-                        
-                tbl = tbl-1
+                        tbl = tbl-1
 
 
 
