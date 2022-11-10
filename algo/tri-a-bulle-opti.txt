@@ -1,6 +1,6 @@
 Début
 
-    créer la fonction triBulle(tableau)
+    créer la fonction triBulleOpti(tableau)
 
         déclarer une variable boolean " tri "
 
@@ -8,7 +8,7 @@ Début
                 affecter a "tri" la valeur "true"
                 déclarer une variable "tbl"
                 affecter a la variable "tbl" la largeur de "tableau" 
-                créer une boucle "for" avec une variable " i = 0 " et tant que i < tbl-1 avec une incrémentation de "i" a chaque itération
+                créer une boucle "for" avec une variable " i = 0 " et tant que "i < tbl-1" avec une incrémentation de "i" a chaque itération
 
                     faire une condition "if" avec une condition d'entée tableau[i] > tableau [i+1] alors :
                         déclarer une variable "temp"
@@ -18,6 +18,8 @@ Début
                         affecter a "tri" la valeur " false "
                         tbl = tbl-1
 
+            Afficher la valeur de "tableau" 
+Fin
 
 
 

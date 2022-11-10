@@ -1,4 +1,4 @@
-/* function triBulleOpti(tableau) {
+function triBulleOpti(tableau) {
 
     var tri = false;
 
@@ -28,4 +28,4 @@
 
 var gg = [30, 2, 65, 78, 9, 1]
 
-triBulleOpti(gg) */
+triBulleOpti(gg)
