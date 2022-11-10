@@ -1,6 +1,7 @@
 function triBulleOpti(tableau) {
 
     var tri = false;
+    var count = 0;
 
     while (tri == false) {
 
@@ -10,9 +11,9 @@ function triBulleOpti(tableau) {
 
 
         for (let i = 0; i < tbl - 1; i++) {
-
+                count++
             if (tableau[i] > tableau[i + 1]) {
-
+                count += 3;
                 var temp = tableau[i];
                 tableau[i] = tableau[i + 1];
                 tableau[i + 1] = temp;
@@ -24,8 +25,10 @@ function triBulleOpti(tableau) {
 
     }
     console.log(tableau);
+    console.log(count);
+    return count;
 }
 
-var gg = [30, 2, 65, 78, 9, 1]
+var gg = [30, 2, 65]
 
 triBulleOpti(gg)
