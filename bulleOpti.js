@@ -1,31 +1,31 @@
-function triBulle(tableau) {
+/* function triBulleOpti(tableau) {
 
-    var tri=false;
+    var tri = false;
 
     while (tri == false) {
 
-    tri = true
+        tri = true
 
         var tbl = tableau.length
 
 
-        for (let i = 0; i < tbl-1; i++) {
+        for (let i = 0; i < tbl - 1; i++) {
 
-            if (tableau[i] > tableau[i+1]) {
+            if (tableau[i] > tableau[i + 1]) {
 
                 var temp = tableau[i];
-                tableau[i] = tableau [i+1];
-                tableau[i+1] = temp;
-                tri = false ;  
+                tableau[i] = tableau[i + 1];
+                tableau[i + 1] = temp;
+                tri = false;
                 tbl--;
             }
         }
-        
-        
-    }  
+
+
+    }
     console.log(tableau);
 }
 
 var gg = [30, 2, 65, 78, 9, 1]
 
-triBulle(gg)
+triBulleOpti(gg) */
