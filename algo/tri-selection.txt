@@ -1,0 +1,44 @@
+Debut
+
+    fonction tri_selection(tableau) 
+        déclarer minimum_index = 0
+        
+        déclarer start
+        pour start variant de 0 jusqu'au nombre d'element de tableau avec un pas de 1
+            déclarer minimum = 100
+            
+            //recherche 
+
+            déclarer index 
+            pour index variant de start jusqu'au nomnbre d'element de tableau avec un pas de 1
+                déclarer element = valeur de tableau d'indice index 
+                
+                si element < minimum alors
+                    minimum = element
+                    minimum_index = index
+                fin si 
+            fin pour 
+
+
+            //affectation
+            déclarer temp = valeur de tableau d'indice start
+            valeur de tableau d'indice start = minimum
+            valeur de tableau d'indice minimum_index = temp
+        fin pour
+
+        retourner tableau
+
+    fin fonction
+
+
+
+
+
+    programme principale 
+
+        déclarer tableau1 = [5, 8, 3, 9, 14];
+        appeler la fonction tri_selection() avec en paramètre tableau1
+
+    fin programme principale
+
+Fin
