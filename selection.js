@@ -1,4 +1,4 @@
-var tableau1 = [5, 8, 3, 9, 14];
+var tableau1 = [5, 8, 3, 9, 2, 6];
 console.log ("Avant la fonction selection :  " + tableau1);
 
 
@@ -42,7 +42,7 @@ function tri_selection(tableau){
         console.log("après :  " + tableau);
     }
 
-    console.log ("APRES LA FONCTION : ");
+    console.log ("apres la fonction selection : ");
     console.log(tableau); 
     return tableau; 
 }    
