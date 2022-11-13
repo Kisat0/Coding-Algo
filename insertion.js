@@ -1,5 +1,5 @@
 let liste1 = [5, 8, 3, 9, 2, 6];
-console.log("avant tri insertion :  " + liste1);
+// console.log("avant tri insertion :  " + liste1);
 
 function triInsertion(liste){
 var countInsertion = 0;
@@ -27,7 +27,7 @@ for(i=0;i<10;i++){
         }
     }
 }
-    console.log("après tri insertion :  " + liste);
+    console.log(liste);
     console.log("valeur final compteurInsertion :  " + countInsertion);
     return countInsertion;
 }
