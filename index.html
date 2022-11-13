@@ -1,42 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="display.js"></script>
-    <script defer src="best_worst.js"></script>
 </head>
+
 <body>
-    
-    <nav>
-        <ul>
-            <li><a href="stats.html">Stats</a></li>
-            <li><a href="bulleOpti.html">Bulle Opti</a></li>
-            <li><a href="bulle.html">Bulle</a></li>
-            <li><a href="insertion.html">Insertion</a></li>
-            <li><a href="selection.html">Selection</a></li>
-        </ul>
-    </nav>
+
     <!-- !! si on ne mettais pas stat.js après selection et insertion et bien il était not defined dans stat -->
 
+    <script src="display.js"></script>
     <script src="best_worst.js"></script>
+    <script src="bulleOpti.js"></script>
+    <script src="bulle.js"></script>
+    <script src="insertion.js"></script>
+    <script src="selection.js"></script>
+    <script src="stats.js"></script>
 
-    <button onclick="tri_selection(tableau1)">tri_selection</button>
-    <button onclick="best_worst(triBulleOpti) ; best_worst(triBulle) ; best_worst(tri_selection) ; best_worst(triInsertion) ">best_worst</button>
-    <button onclick="triInsertion(liste1)">tri insertion</button>
+    <p>Tableau utilisé pour toutes nos fonctions est le suivant: [5, 8, 3, 9, 2, 6, 17, 12, 64, 78, 45, 100]</p>
+
+    <script>
+        var liste1 = [5, 8, 3, 9, 2, 6, 17, 12, 64, 78, 45, 100];
+    </script>
+
+    <button onclick="best_worst(triBulle);best_worst(triBulleOpti);best_worst(triInsertion);best_worst(tri_selection);">Best And Worst</button>
+    <button onclick="tri_selection(liste1,false)">Selection Sorting</button>
+    <button onclick="triInsertion(liste1,false)">Insertion Sorting</button>
+    <button onclick="triBulle(liste1,false)">Bubble Sorting</button>
+    <button onclick="triBulleOpti(liste1,false)">Bubble Op. Sorting</button>
+    <button onclick="stat(10, 20, 5, 10)">Stats</button>
 
 
     <p> /!\ Check la console</p>
 
+    <!-- BONUS AFFICHAGE : ici les fonctions display vont généré du HTML contenant les info souhaité -->
+
+    <div id="content">
+
+    </div>
+
     <!-- idée pour récupéré les valeur de compteur a creuser -->
-    
+
     <!-- <script>
         let recup_comp1 = tri_selection(tableau1);
         console.log ("compteur1 est :  " + recup_comp1)
     </script> -->
 
 </body>
+
 </html>

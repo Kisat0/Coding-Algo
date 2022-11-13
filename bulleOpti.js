@@ -1,4 +1,4 @@
-function triBulleOpti(tableau) {
+function triBulleOpti(tableau,isStat) {
 
     var tri = false;
     var count = 0;
@@ -22,9 +22,11 @@ function triBulleOpti(tableau) {
             tbl--;
         }
 
-
+        
     }
-  /*   displayBulleOpti(tableau,count); */
+    if(!isStat){
+        displayBubbleOpti(tableau,count);
+    }
     console.log(tableau);
     console.log("le counter pour le tri à bulle optimisé est égale à " + count);
     return count;

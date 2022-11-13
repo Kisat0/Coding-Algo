@@ -1,4 +1,4 @@
-function triInsertion(liste){
+function triInsertion(liste,isStat){
 var countInsertion = 0;
 
 for(i=0;i<10;i++){
@@ -24,6 +24,9 @@ for(i=0;i<10;i++){
         }
     }
 }
+    if (!isStat) {
+        displayInsert(liste,countInsertion);
+    }
     console.log(liste);
     console.log("valeur final compteurInsertion :  " + countInsertion);
     return countInsertion;

@@ -23,10 +23,10 @@ function stat(min, max, step, nbr) {
                 tab4[index] = rand;
             }
 
-            countM1 += triBulleOpti(tab1);
-            countM2 += triBulle(tab2);
-            countM3 += tri_selection(tab3);
-            countM4 += triInsertion(tab4);
+            countM1 += triBulleOpti(tab1,true);
+            countM2 += triBulle(tab2,true);
+            countM3 += tri_selection(tab3,true);
+            countM4 += triInsertion(tab4,true);
         }
         countM1 = countM1 / nbr;
         countM2 = countM2 / nbr;
@@ -38,6 +38,7 @@ function stat(min, max, step, nbr) {
         console.log(`Taille du Tableau: ${size}, Moyenne Tri par Selection: ${countM3}`);
         console.log(`Taille du Tableau: ${size}, Moyenne Tri par Insertion: ${countM4}`);
 
+        displayStats(size,countM1,countM2,countM3,countM4);
         size += step;
     }
     console.log("Function stats finished");

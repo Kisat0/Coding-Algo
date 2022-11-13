@@ -1,9 +1,6 @@
-var tableau1 = [5, 8, 3, 9, 2, 6];
+
 // console.log ("Avant la fonction selection :  " + tableau1);
-
-
-
-function tri_selection(tableau){
+function tri_selection(tableau,isStat){
 
     var compteur_selection = 0;
     let minimum_index = 0; 
@@ -51,12 +48,16 @@ function tri_selection(tableau){
         // console.log(tableau[start]);
         // console.log("après :  " + tableau);
     }
-
+    if (!isStat) {
+        displaySelection(tableau,compteur_selection);
+    }
     // console.log ("apres la fonction selection : ");
     console.log(tableau); 
     console.log("valeur final compteurSelection :  " + compteur_selection);
     return compteur_selection; 
 }    
+
+
 
 
 

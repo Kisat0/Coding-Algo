@@ -1,4 +1,4 @@
-function triBulle(tableau) {
+function triBulle(tableau,isStat) {
 
     var count = 0;
     var tbl = tableau.length
@@ -14,6 +14,9 @@ function triBulle(tableau) {
             }
         }
 
+    }
+    if(!isStat){
+        displayBubble(tableau,count);
     }
     console.log(tableau)
     console.log("le counter pour le tri à bulle est égale à " +count);
