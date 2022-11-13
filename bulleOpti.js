@@ -24,6 +24,7 @@ function triBulleOpti(tableau) {
 
 
     }
+    displayBulleOpti(tableau,count);
     console.log(tableau);
     console.log("le counter pour le tri à bulle optimisé est égale à " + count);
     return count;

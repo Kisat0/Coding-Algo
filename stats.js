@@ -25,12 +25,12 @@ function stat(min, max, step, nbr) {
             countM2 = countM2 / nbr; 
             countM3 = countM3 / nbr;
             countM4 = countM4 / nbr;
+            displayStats(size,countM1,countM2,countM3,countM4);
             console.log(`Taille du Tableau: ${size}, Moyenne Tri à Bulle Opti: ${countM1}`);
             console.log(`Taille du Tableau: ${size}, Moyenne Tri à Bulle: ${countM2}`);
             console.log(`Taille du Tableau: ${size}, Moyenne Tri par Selection: ${countM3}`);
             console.log(`Taille du Tableau: ${size}, Moyenne Tri par Insertion: ${countM4}`);
          
-
         size += step;
     }
     console.log("Function finished");
