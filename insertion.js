@@ -1,6 +1,3 @@
-
-console.log("avant tri insertion :  " + liste1);
-
 function triInsertion(liste){
 var countInsertion = 0;
 
