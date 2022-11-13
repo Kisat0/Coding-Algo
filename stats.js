@@ -16,13 +16,15 @@ function stat(min,max,step,nbr) {
                     var rand = Math.floor(Math.random() * 100); 
                     tab[index] = rand;
                 }
-                countM1 += triBulleOpti(tab);
+                countM1 = countM1 + triBulleOpti(tab);
                 countM2 += triBulle(tab);
+                countM3 += tri_selection(tab);
             }
             countM1 = countM1 / nbr; 
             countM2 = countM2 / nbr; 
             console.log(`Taille du Tableau: ${size}, Moyenne Tri à Bulle Opti: ${countM1}`);
             console.log(`Taille du Tableau: ${size}, Moyenne Tri à Bulle: ${countM2}`);
+            console.log(`Taille du Tableau: ${size}, Moyenne Tri à Bulle: ${countM3}`);
          
 
 

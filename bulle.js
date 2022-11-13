@@ -15,8 +15,8 @@ function triBulle(tableau) {
         }
 
     }
-   /*  console.log(tableau)
-    console.log("le counter pour le tri à bulle est égale à " +count); */
+    console.log(tableau)
+    console.log("le counter pour le tri à bulle est égale à " +count);
     return count;
 }
 
