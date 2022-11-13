@@ -1,0 +1,27 @@
+Debut
+	
+	fonction best_worst(tri)
+		
+		déclarer tableau tableWorst = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+		déclarer tableau tableBest = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+		déclarer worst = appeler fonction tri() avec pour paramètre tableWorst
+		déclarer best = appeler fonction tri() avec pour paramètre tableBest
+
+		afficher best 
+		afficher worst 
+
+	fin fonction
+
+
+
+
+
+	Programme principale 
+		appeler fonction best_worst() avec en paramètre triBulle
+		appeler fonction best_worst() avec en paramètre triBulleOpti
+		appeler fonction best_worst() avec en paramètre triInsertion
+		appeler fonction best_worst() avec en paramètre triSelection
+	Fin programme principale
+
+Fin
