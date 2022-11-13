@@ -18,13 +18,13 @@ function triBulleOpti(tableau) {
                 tableau[i] = tableau[i + 1];
                 tableau[i + 1] = temp;
                 tri = false;
-                tbl--;
             }
+            tbl--;
         }
 
 
     }
-    displayBulleOpti(tableau,count);
+  /*   displayBulleOpti(tableau,count); */
     console.log(tableau);
     console.log("le counter pour le tri à bulle optimisé est égale à " + count);
     return count;
