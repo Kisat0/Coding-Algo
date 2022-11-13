@@ -12,5 +12,6 @@ function best_worst(tri) {
     console.log("compteur du " + tri.name + " pour le pire tableau possible:  " + worst_selection);
     console.log("compteur du " + tri.name + " pour le meilleur tableau possible:  " + best_selection);
     
+    //BONUS AFFICHAGE index.html: Appel une des fonctions display pour gerer la génération du code html approprié 
     displayBestWorst(tri.name,best_selection,worst_selection);
 }
