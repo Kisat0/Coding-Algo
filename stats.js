@@ -16,6 +16,7 @@ function stat(min, max, step, nbr) {
                     var rand = Math.floor(Math.random() * 100); 
                     tab[index] = rand;
                 }
+                console.log("génération de tableau numéro :  " + i + "  -------------------------")
                 countM1 += triBulleOpti(tab);
                 countM2 += triBulle(tab);
                 countM3 += tri_selection(tab);
@@ -33,7 +34,7 @@ function stat(min, max, step, nbr) {
 
         size += step;
     }
-    console.log("Function finished");
+    console.log("Function stats finished");
 }
 
 
