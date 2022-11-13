@@ -4,12 +4,19 @@ Début
 
         déclarer une variable "tbl"
         affecter a la variable "tbl" la largeur de "tableau" 
-        créer une boucle "for" avec une variable " i = 0 " et tant que "i < tbl-1" avec une incrémentation de "i" a chaque itération
-            créer une boucle "for" avec une variable " j = 0 " et tant que "j < tbl-1" avec une incrémentation de "j" a chaque itération
-            déclarer une variable "temp"
-            affecter a la variable "temp" la valeur de " tableau [j] "
-            affecter " tableau[j] " la valeur de " tableau [j+1] " 
-            affecter " tableau[j+1] " la valeur de " temp "
+
+        pour une variable " i = 0 " et tant que "i < tbl-1" avec une incrémentation de "i" a chaque itération
+
+            pour une variable " j = 0 " et tant que "j < tbl-1" avec une incrémentation de "j" a chaque itération
+
+                déclarer une variable "temp"
+                affecter a la variable "temp" la valeur de " tableau [j] "
+                affecter " tableau[j] " la valeur de " tableau [j+1] " 
+                affecter " tableau[j+1] " la valeur de " temp "
+            fin pour
+            
+        fin pour
+
         
         Afficher la valeur de "tableau"
 
