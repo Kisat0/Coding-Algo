@@ -24,7 +24,7 @@ for(i=0;i<10;i++){
         }
     }
 }
-    console.log("après tri insertion :  " + liste);
+    console.log(liste);
     console.log("valeur final compteurInsertion :  " + countInsertion);
     return countInsertion;
 }

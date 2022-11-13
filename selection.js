@@ -1,5 +1,5 @@
 var tableau1 = [5, 8, 3, 9, 2, 6];
-console.log ("Avant la fonction selection :  " + tableau1);
+// console.log ("Avant la fonction selection :  " + tableau1);
 
 
 
@@ -15,9 +15,9 @@ function tri_selection(tableau){
         // let minimum = 100;   //!!! il faut renitialiser le minimum a chaque nouvelle recherche
         let minimum = 100;  
         //affectation ?
-        console.log("avant :  " + tableau);
+        // console.log("avant :  " + tableau);
 
-        console.log("debut de recherche ------------------")
+        // console.log("debut de recherche ------------------")
 
         //boucle qui viens parcourir le tableau pour trouver la plus petite valeur
         for (let index = start; index < tableau.length; index++) {
@@ -29,17 +29,17 @@ function tri_selection(tableau){
                 compteur_selection++ ; //affectation 
                 minimum_index = index;
                 compteur_selection++ ; //affectation 
-                console.log("minimum trouvé ");
-                console.log("valeur de minimum :  " + element);
-                console.log("index du minimum :  " + minimum_index);
+                // console.log("minimum trouvé ");
+                // console.log("valeur de minimum :  " + element);
+                // console.log("index du minimum :  " + minimum_index);
             }
         }
-        console.log("fin des recherches ------------------")
+        // console.log("fin des recherches ------------------")
 
 
         // il faut swappé sinon on détruit des valeurs
-        console.log("affectation");
-        console.log(tableau[start]);
+        // console.log("affectation");
+        // console.log(tableau[start]);
         let temp = tableau[start];  //on met la valeur qui n'est pas à la bonne place dans une variable temporaire pour ne pas la détruire/perdre
         compteur_selection++ ; //affectation 
 
@@ -48,13 +48,13 @@ function tri_selection(tableau){
         tableau[minimum_index] = temp; 
         compteur_selection++ ; //affectation 
 
-        console.log(tableau[start]);
-        console.log("après :  " + tableau);
+        // console.log(tableau[start]);
+        // console.log("après :  " + tableau);
     }
 
-    console.log ("apres la fonction selection : ");
+    // console.log ("apres la fonction selection : ");
     console.log(tableau); 
-    console.log("valeur final du compteur :  " + compteur_selection);
+    console.log("valeur final compteurSelection :  " + compteur_selection);
     return compteur_selection; 
 }    
 

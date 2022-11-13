@@ -40,7 +40,7 @@ function stat(min, max, step, nbr) {
 
         size += step;
     }
-    console.log("Function finished");
+    console.log("Function stats finished");
 }
 
 
