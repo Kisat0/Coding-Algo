@@ -1,0 +1,25 @@
+Créer Tableau liste contenant 10 éléments 
+Créer variable vide Pos
+Créer variable vide Souv
+Créer variable vide Test
+
+Debut
+     Pour i=0 est plus petit que 10:
+          Mettre Pos à i
+          Tant que Pos n'est pas egal à 0:
+               Mettre Souv à l'index Pos de liste
+               Mettre Test à l'index Pos-1 de liste
+
+               Si Souv est inférieure à Test:
+                    Inverser les valeurs de l'index Pos et l'index Pos-1
+                    Mettre Pos à Pos-1
+               Fin Si
+               Sinon
+                    Mettre Pos à 0
+               Fin Sinon
+
+          Fin Tant que
+
+     Fin Pour
+
+Fin
