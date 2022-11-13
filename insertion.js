@@ -1,4 +1,4 @@
-let liste1 = [5, 8, 3, 9, 2, 6];
+
 console.log("avant tri insertion :  " + liste1);
 
 function triInsertion(liste){
