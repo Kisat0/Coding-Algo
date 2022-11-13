@@ -19,8 +19,10 @@ function displayStats(size,countM1,countM2,countM3,countM4) {
     div.appendChild(p4)
 }
 
-function displayBulleOpti(tableau,count){
+function displayBulleOpti(tableauA,count,tableauB){
     div.innerHTML = "";
 
-    
+    var p1 = document.createElement('p');
+    var p2 = document.createElement('p');
+
 }

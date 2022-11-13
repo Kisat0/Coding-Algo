@@ -12,18 +12,27 @@
     <script defer src="insertion.js"></script>
     <script defer src="best_worst.js"></script>
     <script defer src="stats.js"></script> 
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
 
     <!-- !! si on ne mettais pas stat.js après selection et insertion et bien il était not defined dans stat -->
-
-
+    
     <button onclick="tri_selection(tableau1)">Selection Sorting</button>
     <button onclick="best_worst(triBulleOpti)">Best And Worst</button>
     <button onclick="triInsertion(liste1)">Insertion Sorting</button>
-    <button onclick="stats(10,20,5,10)">Stats</button>
 
+    <div class="stats-content">
+        <form action="">
+            <input type="text" value="" placeholder="min..">
+            <input type="text" value="" placeholder="max..">
+            <input type="text" value="" placeholder="step..">
+            <input type="text" value="" placeholder="nbr..">
+        </form>
+        <button onclick="stats(10,20,5,10)">Stats</button>
+    </div>
+    
     <div id="content">
 
     </div>
