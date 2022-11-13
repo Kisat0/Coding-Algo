@@ -5,34 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="insertion.js"></script>
     <link rel="stylesheet" href="style.css">
-    <script defer src="display.js"></script>
-    <script defer src="best_worst.js"></script>
 </head>
 <body>
-    
+
     <nav>
         <ul>
+            <li><a href="index.html">Home</a></li>
             <li><a href="stats.html">Stats</a></li>
             <li><a href="bulleOpti.html">Bulle Opti</a></li>
             <li><a href="bulle.html">Bulle</a></li>
-            <li><a href="insertion.html">Insertion</a></li>
             <li><a href="selection.html">Selection</a></li>
         </ul>
     </nav>
-    <!-- !! si on ne mettais pas stat.js après selection et insertion et bien il était not defined dans stat -->
-
-    <button onclick="best_worst(triBulleOpti)">Best And Worst</button>
-
-
     <p> /!\ Check la console</p>
-
-    <!-- idée pour récupéré les valeur de compteur a creuser -->
-    
-    <!-- <script>
-        let recup_comp1 = tri_selection(tableau1);
-        console.log ("compteur1 est :  " + recup_comp1)
-    </script> -->
-
+    <script>
+        let liste1 = [5, 8, 3, 9, 2, 6];
+        triInsertion(liste1);
+    </script>
 </body>
 </html>
