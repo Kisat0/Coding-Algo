@@ -1,32 +1,37 @@
 Debut
 
-    fonction tri_selection(tableau) 
-        déclarer minimum_index = 0
-        
-        déclarer start
-        pour start variant de 0 jusqu'au nombre d'element de tableau avec un pas de 1
-            déclarer minimum = 100
-            
-            //recherche 
+    fontion triSelection (tableau) 
 
-            déclarer index 
-            pour index variant de start jusqu'au nomnbre d'element de tableau avec un pas de 1
-                déclarer element = valeur de tableau d'indice index 
-                
-                si element < minimum alors
-                    minimum = element
-                    minimum_index = index
+        déclarer minimumIndex = 0
+        déclarer compteurSelection = 0
+
+        déclarer start = 0
+        pour Start variant de 0, jusqu'au nombre d'element de tableau, avec un pas de 1
+
+            minimumIndex = start
+            incrémenter de 1 compteurSelection
+
+            //RECHERCHES
+            pour index variant de start, jusqu'au nombre d'element de tableau, avec un pas de 1
+
+                incrémenter de 1 compteurSelection //(comparaison du if)
+                si valeur de tableau d'indice [index] < valeur de tableau d'indice [minimumIndex] alors
+                    minimumIndex = index
+                    incrémenter de 1 compteurSelection
                 fin si 
-            fin pour 
+            fin pour
 
+            //AFFECTATION
+            déclarer temp = valeur de tableau d'indice [start]
+            incrémenter de 1 compteurSelection
+            valeur de tableau d'indice [star] = valeur de tableau d'indice [minimumIndex]
+            incrémenter de 1 compteurSelection
+            valeur de tableau d'indice [minimumIndex] = temp 
+            incrémenter de 1 compteurSelection
 
-            //affectation
-            déclarer temp = valeur de tableau d'indice start
-            valeur de tableau d'indice start = minimum
-            valeur de tableau d'indice minimum_index = temp
         fin pour
-
-        retourner tableau
+        
+        retourner compteurSelection
 
     fin fonction
 
@@ -34,11 +39,9 @@ Debut
 
 
 
-    programme principale 
-
-        déclarer tableau1 = [5, 8, 3, 9, 14];
-        appeler la fonction tri_selection() avec en paramètre tableau1
-
-    fin programme principale
+    debut programme principale 
+        declarer tableau1 = [5, 8, 3, 9, 2, 6]
+        appeler fonction triSelection avec pour argument tableau1
+    fin programme principale 
 
 Fin
