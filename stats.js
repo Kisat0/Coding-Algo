@@ -18,11 +18,17 @@ function stat(min,max,step,nbr) {
                 }
                 countM1 += triBulleOpti(tab);
                 countM2 += triBulle(tab);
+                countM3 += tri_selection(tab);
+                countM4 += triInsertion(tab);
             }
             countM1 = countM1 / nbr; 
             countM2 = countM2 / nbr; 
+            countM3 = countM3 / nbr;
+            countM4 = countM4 / nbr;
             console.log(`Taille du Tableau: ${size}, Moyenne Tri à Bulle Opti: ${countM1}`);
             console.log(`Taille du Tableau: ${size}, Moyenne Tri à Bulle: ${countM2}`);
+            console.log(`Taille du Tableau: ${size}, Moyenne Tri par Selection: ${countM3}`);
+            console.log(`Taille du Tableau: ${size}, Moyenne Tri par Insertion: ${countM4}`);
          
 
 
