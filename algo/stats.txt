@@ -1,0 +1,37 @@
+Début
+
+    créer la fonction "stats" avec des paramètre d'entrée "min","max","step","nbr" 
+
+        déclarer une variable "size"
+        affecter a la variable "size" la valeur de "min"
+        déclarer les 4 variable "countM1", "countM2", "countM3", "countM4"
+
+        créer une boucle "while" avec la condition d'enter "size <= nbr"
+
+            créer une boucle "for" avec une variable " i = 0 " et tant que "i < nbr" avec une incrémentation de "i" a chaque itération
+            
+                déclarer une variable "tab" qui contiens "un tableau vide"
+
+                    créer une boucle "for" avec une variable " index = 0 " et tant que "index < size" avec une incrémentation de "index" a chaque itération
+                
+                        déclarer une variable "rand" qui prends en valeur un chiffre aléatoire à chaque itération
+                        attribuer a la case de la valeur de l'index de "tab" la valeur de la variable "rand"
+            
+                Ajouter à la variable "countM1" la valeur de retour de la fonction "triBulleOpti" et faire une addition des prochaines valeurs de retour à chaque itération
+                Ajouter à la variable "countM2" la valeur de retour de la fonction "triBulle" et faire une addition des prochaines valeurs de retour à chaque itération
+                Ajouter à la variable "countM3" la valeur de retour de la fonction "tri_selection" et faire une addition des prochaines valeurs de retour à chaque itération
+                Ajouter à la variable "countM4" la valeur de retour de la fonction "tri_insertion" et faire une addition des prochaines valeurs de retour à chaque itération
+            
+            affecter à la variable "countM1" la division de la valeur totale de "countM1" par " nbr " 
+            affecter à la variable "countM2" la division de la valeur totale de "countM2" par " nbr " 
+            affecter à la variable "countM3" la division de la valeur totale de "countM3" par " nbr " 
+            affecter à la variable "countM4" la division de la valeur totale de "countM4" par " nbr " 
+
+            Afficher la valeur de "size" et de la moyenne countM1
+            Afficher la valeur de "size" et de la moyenne countM2
+            Afficher la valeur de "size" et de la moyenne countM3
+            Afficher la valeur de "size" et de la moyenne countM4
+
+            incrémentation de la variable "size" par la valeur "step"
+
+Fin
