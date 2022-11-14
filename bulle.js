@@ -1,3 +1,5 @@
+//BONUS AFFICHAGE : la variable isStat est un bouléan qui nous sert pour savoir quoi afficher en html 
+//                  Elle n'interfère pas dans le tri de la fonction
 function triBulle(tableau,isStat) {
 
     var count = 0;
