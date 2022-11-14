@@ -1,25 +1,33 @@
-Créer Tableau liste contenant 10 éléments 
-Créer variable vide Pos
-Créer variable vide Souv
-Créer variable vide Test
-
 Debut
-     Pour i=0 est plus petit que 10:
-          Mettre Pos à i
-          Tant que Pos n'est pas egal à 0:
-               Mettre Souv à l'index Pos de liste
-               Mettre Test à l'index Pos-1 de liste
 
-               Si Souv est inférieure à Test:
-                    Inverser les valeurs de l'index Pos et l'index Pos-1
-                    Mettre Pos à Pos-1
-               Fin Si
-               Sinon
-                    Mettre Pos à 0
-               Fin Sinon
+     Déclarer Tableau liste contenant 10 éléments 
 
-          Fin Tant que
 
-     Fin Pour
+     fonction triInsertion(liste)
+          Déclarer variable vide Pos
+          Déclarer variable vide Souv
+          Déclarer variable vide Test
 
+
+          Pour une variable i variant de 0, jusqu'a "i < 10", avec un pas de 1 a chaque itération
+
+
+               Pos = i
+
+               Tant que Pos n'est pas egal à 0:
+                    Souv = la valeur de liste d'index[Pos-1]
+                    Test = la valeur de liste d'index[Pos-1]
+
+                    Si Souv est inférieure à Test:
+                         Inverser les valeurs de l'index Pos et l'index Pos-1
+                         Mettre Pos à Pos-1
+                    Fin Si
+                    Sinon
+                         Pos = 0
+                    Fin Sinon
+
+               Fin Tant que
+
+          Fin Pour
+     Fin fonction
 Fin
