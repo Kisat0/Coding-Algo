@@ -1,0 +1,78 @@
+
+ ----------------------------- RESULTAT BRUT -----------------------------
+
+Exercice 3.B
+-------------- début jeux d'essaie best & worst pour triBulle -------------- 
+
+Pour le tri triBulle le résultat avec le pire tableau possible est: 216
+
+Pour le tri triBulle le résultat avec le meilleur tableau possible est: 81
+
+-------------- début jeux d'essaie best & worst pour triBulleOpti -------------- 
+Pour le tri triBulleOpti le résultat avec le pire tableau possible est: 75
+
+Pour le tri triBulleOpti le résultat avec le meilleur tableau possible est: 5
+
+-------------- début jeux d'essaie best & worst pour triInsertion -------------- 
+
+Pour le tri triInsertion le résultat avec le pire tableau possible est: 180
+
+Pour le tri triInsertion le résultat avec le meilleur tableau possible est: 9
+
+-------------- début jeux d'essaie best & worst pour tri_selection -------------- 
+
+Pour le tri tri_selection le résultat avec le pire tableau possible est: 120
+
+Pour le tri tri_selection le résultat avec le meilleur tableau possible est: 95
+
+
+
+
+
+Exercice 3.C
+
+Resulstat obtenue a partir des paramètre de fonction stat suivant : 
+    stat(10, 20, 5, 10)
+    min = 10
+    max = 20
+    step = 5
+    nbr = 10
+la moyenne dépend donc de tableau généré aléatoirement, les Resulstat différeront a chaque appel de la fonction stat
+
+
+
+
+Taille du tableau: 10 Valeur de la Moyenne du Tri à Bulle Opti: 41.8
+
+Taille du tableau: 10 Valeur de la Moyenne du Tri à Bulle: 148.2
+
+Taille du tableau: 10 Valeur de la Moyenne du Tri par Selection: 106.4
+
+Taille du tableau: 10 Valeur de la Moyenne du Tri par Insertion: 96.8
+
+
+
+Taille du tableau: 15 Valeur de la Moyenne du Tri à Bulle Opti: 89.17999999999999
+
+Taille du tableau: 15 Valeur de la Moyenne du Tri à Bulle: 358.12
+
+Taille du tableau: 15 Valeur de la Moyenne du Tri par Selection: 211.54000000000002
+
+Taille du tableau: 15 Valeur de la Moyenne du Tri par Insertion: 98.08
+
+
+
+Taille du tableau: 20 Valeur de la Moyenne du Tri à Bulle Opti: 157.71800000000002
+
+Taille du tableau: 20 Valeur de la Moyenne du Tri à Bulle: 656.012
+
+Taille du tableau: 20 Valeur de la Moyenne du Tri par Selection: 344.854
+
+Taille du tableau: 20 Valeur de la Moyenne du Tri par Insertion: 100.10799999999999
+
+
+
+
+
+
+

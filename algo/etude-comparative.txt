@@ -1,0 +1,72 @@
+Exercice 3.B
+
+
+classement pour pire tableau : 
+1 - tri bulle opti
+3 - tri selection 
+2 - tri insertion
+4 - tri bulle 
+Dans le cas extreme d'un tableau ou les valeurs sont dans l'ordre inverse a celui souhaiter c'est
+le tri a bull optimisé qui l'emporte
+
+
+
+classement pour tableau idéal :
+1 - tri bulle opti
+3 - tri insertion 
+4 - tri bulle 
+2 - tri Selection
+On peut donc voir que dans le cas d'un tableau déjà trié , C'est le tri a bulle optimisé qui s'en sort le mieux 
+
+ /!\ Remarque : dans le cas d'un tableau déjà trié le tri par selection semble moins adapté que dans le cas 
+                d'un tableau dans le désordre. Il est moins bien classé qu'habituellement et passe en dessous 
+                du tri a bulle 
+
+
+
+
+
+
+Exercice 3.C
+
+ ----------------------------- ETUDE COMPARATIVE : -----------------------------
+
+Pour chaque taille de tableau, le classement de performance des tris par leurs moyenne est le suivant
+
+Tableau de 10 et 15
+1 - tri bulle opti
+2 - Insertion
+3 - Selection
+4 - Tri bulle
+
+Tableau de 20
+2 - Insertion
+1 - tri bulle opti
+3 - Selection
+4 - Tri bulle  
+
+
+OBSERVATION 1 : 
+pour des très petits tableau (jusqu'a 10 elements)
+le tri par selection et le tri par insertion ont des performance similaire. ici pour un tableau de 10, 
+le tri par insertion a un avantage leger.
+CEPENDANT, dès que le tableau fait plus de 10 elements le tri par selection deviens bien moins performant face au tri par insertion
+
+
+OBSERVATION 2 : 
+Pour des petit tableau (jusqu'a 15 elements MAX)
+le tri a bulle optimisé domine en performance de manière global
+CEPENDANT, plus on se rapproche des 15 elements plus le tri a bulle opti perd son avance face 
+au tri par insertion : ici pour les tableau de 15 element , l'avance de tri a bulle opti face au tri par insertion 
+n'est plus que de 10point contre 55 point pour les tableau de 10 elements
+
+
+OBERVATION 2.bis : 
+Pour des grand tableau (plus de 15 elements )
+le tri par insertion passe devant le tri a bulle optimisé en terme de moyenne de performance
+
+
+CONCLUSION : 
+Pour un tableau de petite taille (jusqu'a 15 elements) le tri a bulle optimisé est le tri a choisir 
+Pour un tableau de grande taille (plus de 15 elements) le tri par insertion est le tri a choisir 
+Le tri a bulle simple n'est pas un choix recommendable de manière générale 
